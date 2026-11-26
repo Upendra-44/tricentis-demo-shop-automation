@@ -1,0 +1,12 @@
+{
+  "registration": {
+    "first_name": "Automation",
+    "last_name": "Tester",
+    "password": "Test@12345"
+  },
+  "search": {
+    "valid": "computer",
+    "partial": "comp",
+    "unlikely": "zzqvnotaproduct"
+  }
+}

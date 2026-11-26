@@ -1,0 +1,57 @@
+﻿test_case_id,module,scenario,expected_result,workbook_status,automation_status
+TC_REG_01,Register,Verify Register page opens,Registration page should open,Pass,Starter suite coverage; verify execution
+TC_REG_02,Register,validate Registering an Account by providing only the mandatory fileds,User should be redirected to the home page and “Log out” link should appear,Pass,Starter suite coverage; verify execution
+TC_REG_03,Register,validate Registering an Account by providing the all fileds,User should be redirected to the home page and “Log out” link should appear,Pass,Starter suite coverage; verify execution
+TC_REG_04,Register,validate Registering an Account  with empty fileds,Validation message “Please enter email and password” should appear,Pass,Starter suite coverage; verify execution
+TC_REG_05,Register,Verify registration with existing email,Error message “The specified email already exists” displayed,Pass,Starter suite coverage; verify execution
+TC_REG_06,Register,Verify registration by providing the password only 5 characters,"Error message displayed ""The password should have at least 6 characters.""",Pass,Starter suite coverage; verify execution
+TC_REG_07,Register,Verify registration by providing the mismatched password,Error message displayed “Passwords do not match”,Pass,Starter suite coverage; verify execution
+TC_REG_08,Register,Verify gender selection,registration page should open,Pass,Starter suite coverage; verify execution
+TC_REG_09,Register,Verify login link on Register page,Login page should open,Pass,Starter suite coverage; verify execution
+TC_REG_10,Register,Verify invalid email format,Error message displayed “Wrong email ”,Fail,Starter suite coverage; verify execution
+TC_LOG_01,Login,Verify login page opens,Login page should open,Pass,Starter suite coverage; verify execution
+TC_LOG_02,Login,Login with valid credentials,User should login successfully,Pass,Starter suite coverage; verify execution
+TC_LOG_03,Login,Login with invalid credentials,User should not login successfully,Pass,Starter suite coverage; verify execution
+TC_LOG_04,Login,Login with empty fileds,User should not login successfully,Pass,Starter suite coverage; verify execution
+TC_LOG_05,Login,Login with Only Username,User should not login successfully,Pass,Starter suite coverage; verify execution
+TC_LOG_06,Login,Login With Only password,User should not login successfully,Pass,Starter suite coverage; verify execution
+TC_LOG_07,Login,Login with correct Username and Wrong Password,User should not login successfully,Pass,Starter suite coverage; verify execution
+TC_LOG_08,Login,Login with Incorrect Username and Correct Password,User should not login successfully,Pass,Starter suite coverage; verify execution
+TC_LOG_09,Login,Verfify Case Sensitivity,User should  login successfully,Pass,Starter suite coverage; verify execution
+TC_LOG_10,Login,Verify Remember Me Checkbox,Session should persist even after reopening site,Pass,Starter suite coverage; verify execution
+TC_LOG_11,Login,Verify Navigation after Login,Redirect to home page,Pass,Starter suite coverage; verify execution
+TC_LOG_12,Login,Verify Logout ,User should  logout successfully,Pass,Starter suite coverage; verify execution
+TC_SRCH_01,Search,Verify Search with Valid keyword,Matching Products Should Appear,Pass,Starter suite coverage; verify execution
+TC_SRCH_02,Search,Verify Search with Invalid keyword,Matching Products Should Not Appear,Pass,Starter suite coverage; verify execution
+TC_SRCH_03,Search,Verify Search with partial Keyword,"All Products containing ""comp"" name should appear",Pass,Starter suite coverage; verify execution
+TC_SRCH_04,Search,Verify Search with Blank input,Page reloads or shows validation message,Pass,Starter suite coverage; verify execution
+TC_SRCH_05,Search,Verify search is case insensitive,Both Give same result ,Pass,Starter suite coverage; verify execution
+TC_SRCH_06,Search,Verify Search both Uppercase and Lowercase,Matching Products Should Appear,Pass,Starter suite coverage; verify execution
+TC_SRCH_07,Search,Verify search result navigation,Product details page should open,Pass,Starter suite coverage; verify execution
+TC_CART_01,Add to Cart,Verify product page loads correctly,Product details page should open with all configuration options visible,Pass,Starter suite coverage; verify execution
+TC_CART_02,Add to Cart,Verify default product options,"Default options (Processor, RAM, HDD, OS, Software) should be pre-selected correctly",Pass,Starter suite coverage; verify execution
+TC_CART_03,Add to Cart,Verify selecting a processor option,Selected option should change without error,Pass,Starter suite coverage; verify execution
+TC_CART_04,Add to Cart,Verify selecting RAM options,RAM selection updates correctly,Pass,Starter suite coverage; verify execution
+TC_CART_05,Add to Cart,Verify selecting HDD options,HDD selection updates correctly,Pass,Starter suite coverage; verify execution
+TC_CART_06,Add to Cart,Verify selecting OS options,OS selection changes without issue,Pass,Starter suite coverage; verify execution
+TC_CART_07,Add to Cart,Verify selecting software options,Total price should update dynamically,Pass,Starter suite coverage; verify execution
+TC_CART_08,Add to Cart,Verify price updates dynamically,Product price updates according to selected options,Pass,Starter suite coverage; verify execution
+TC_CART_09,Add to Cart,Verify “Add to Cart” button is clickable,Product should add to cart successfully,Pass,Starter suite coverage; verify execution
+TC_CART_10,Add to Cart,Verify success message after adding,Message “The product has been added to your shopping cart” appears,Pass,Starter suite coverage; verify execution
+TC_CART_11,Add to Cart,Verify cart count increment,Cart count should increase by 1,Pass,Starter suite coverage; verify execution
+TC_CART_12,Add to Cart,Verify item is listed in cart,Item should be displayed with correct configuration,Pass,Starter suite coverage; verify execution
+TC_CART_13,Add to Cart,Verify correct configuration in cart,Configuration should match selected options,Pass,Starter suite coverage; verify execution
+TC_CART_14,Add to Cart,Verify total price in cart,Total price should be accurate,Pass,Starter suite coverage; verify execution
+TC_CART_15,Add to Cart,Verify updating quantity in cart,Quantity and total price should update correctly,Pass,Starter suite coverage; verify execution
+TC_CART_16,Add to Cart,Verify removing product from cart,Product should be removed from cart,Pass,Starter suite coverage; verify execution
+TC_CART_17,Add to Cart,Verify “Continue Shopping” button,Redirects back to homepage,Pass,Starter suite coverage; verify execution
+TC_CHK_01,Checkout,Verify checkout page opens after clicking Checkout,Checkout page (Billing Address Step 1) should open,Pass,Starter suite coverage; verify execution
+TC_CHK_02,Checkout,Verify placing order with existing billing address,User moves to Shipping Address step,Pass,Starter suite coverage; verify execution
+TC_CHK_03,Checkout,Verify adding a new billing address,New address gets saved and applied,Pass,Starter suite coverage; verify execution
+TC_CHK_04,Checkout,Verify shipping address selection,User moves to Shipping Method step,Pass,Starter suite coverage; verify execution
+TC_CHK_05,Checkout,Verify shipping method selection,User moves to Payment Method step,Pass,Starter suite coverage; verify execution
+TC_CHK_06,Checkout,Verify payment method selection,User moves to Payment Information step,Pass,Starter suite coverage; verify execution
+TC_CHK_07,Checkout,Verify completing payment information,User moves to Confirm Order page,Pass,Starter suite coverage; verify execution
+TC_CHK_08,Checkout,Verify order confirmation with valid dataVerify order confirmation with valid data,Message: “Your order has been successfully processed!”,Pass,Starter suite coverage; verify execution
+TC_CHK_09,Checkout,Verify order appears in order history after placing order,Order should appear with correct order number and status,Pass,Starter suite coverage; verify execution
+TC_CHK_10,Checkout,Verify mandatory field validation in checkout,Error message appears for empty required fields,Pass,Starter suite coverage; verify execution
